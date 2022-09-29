@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Media;
 
 namespace Kinect_WPF.ViewModel
 {
@@ -11,9 +12,9 @@ namespace Kinect_WPF.ViewModel
         public MenuModel()
         {
             DancasDAB = new System.Collections.ObjectModel.ObservableCollection<Model.Danca>();
-            DancasDAB.Add(new Model.Danca() { Nome = "Dança da Mãozinha", ImageSource = "/Resources/mao.jpg"});
-            DancasDAB.Add(new Model.Danca() { Nome = "Dança 2", ImageSource = "/Resources/psy.jpg" });
-            DancasDAB.Add(new Model.Danca() { Nome = "Dança 3", ImageSource = "/Resources/dinamite.jpg" });
+            DancasDAB.Add(new Model.Danca() { Nome = "Dança da Mãozinha", ImageSource = new Uri(System.Environment.CurrentDirectory + "/resources/mao.jpg") });
+            DancasDAB.Add(new Model.Danca() { Nome = "Dança 2", ImageSource = new Uri(System.Environment.CurrentDirectory + "/resources/psy.jpg") });
+            DancasDAB.Add(new Model.Danca() { Nome = "Dança 3", ImageSource = new Uri(System.Environment.CurrentDirectory + "/resources/dinamite.jpg") });
 
 
             SelectedDancaDAB = DancasDAB[0];

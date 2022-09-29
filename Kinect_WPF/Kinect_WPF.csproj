@@ -14,19 +14,4 @@
     <Page Remove="View\NovaPasta\**" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Remove="Resources\dinamite.jpg" />
-    <None Remove="Resources\mao.jpg" />
-    <None Remove="Resources\psy.jpg" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\psy.jpg" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\mao.jpg" />
-    <EmbeddedResource Include="Resources\dinamite.jpg" />
-  </ItemGroup>
-
 </Project>
