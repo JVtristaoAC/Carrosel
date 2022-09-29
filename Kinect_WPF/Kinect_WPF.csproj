@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="View\NovaPasta\**" />
+    <EmbeddedResource Remove="View\NovaPasta\**" />
+    <None Remove="View\NovaPasta\**" />
+    <Page Remove="View\NovaPasta\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\dinamite.jpg" />
+    <None Remove="Resources\mao.jpg" />
+    <None Remove="Resources\psy.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\psy.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\mao.jpg" />
+    <EmbeddedResource Include="Resources\dinamite.jpg" />
+  </ItemGroup>
+
+</Project>
