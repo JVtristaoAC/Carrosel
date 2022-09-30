@@ -10,5 +10,8 @@ namespace Kinect_WPF.Model
     {
         public string Nome { get; set; }
         public System.Uri ImageSource { get; set; }
+        public string Clicked  { get; set; }
+
+
     }
 }

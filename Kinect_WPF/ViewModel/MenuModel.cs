@@ -12,9 +12,9 @@ namespace Kinect_WPF.ViewModel
         public MenuModel()
         {
             DancasDAB = new System.Collections.ObjectModel.ObservableCollection<Model.Danca>();
-            DancasDAB.Add(new Model.Danca() { Nome = "Dança da Mãozinha", ImageSource = new Uri(System.Environment.CurrentDirectory + "/resources/mao.jpg") });
-            DancasDAB.Add(new Model.Danca() { Nome = "Dança 2", ImageSource = new Uri(System.Environment.CurrentDirectory + "/resources/psy.jpg") });
-            DancasDAB.Add(new Model.Danca() { Nome = "Dança 3", ImageSource = new Uri(System.Environment.CurrentDirectory + "/resources/dinamite.jpg") });
+            DancasDAB.Add(new Model.Danca() { Nome = "Dança da Mãozinha", ImageSource = new Uri(System.Environment.CurrentDirectory + "/resources/mao.jpg"), Clicked = "Carrossel_1" });
+            DancasDAB.Add(new Model.Danca() { Nome = "Dança 2", ImageSource = new Uri(System.Environment.CurrentDirectory + "/resources/psy.jpg"), Clicked = "Carrossel_2" });
+            DancasDAB.Add(new Model.Danca() { Nome = "Dança 3", ImageSource = new Uri(System.Environment.CurrentDirectory + "/resources/dinamite.jpg"), Clicked = "Carrossel_3" });
 
 
             SelectedDancaDAB = DancasDAB[0];

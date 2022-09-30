@@ -71,7 +71,10 @@
                                 <Border BorderThickness="1" BorderBrush="Gainsboro" Width="250" Height="150">
                                     <Grid>
                                         <Border Grid.Row="0" BorderThickness="0" Background="White">
-                                            <Image Grid.Row="0" Source="{Binding ImageSource}" VerticalAlignment="Center" HorizontalAlignment="Center" Height="100"/>
+                                            <Button Background="Transparent" BorderBrush="Transparent" x:Name="Index">
+                                                <!--Command="{Binding Clicked}-->
+                                                <Image Grid.Row="0" Source="{Binding ImageSource}" VerticalAlignment="Center" HorizontalAlignment="Center" Height="100"/>
+                                            </Button>
                                         </Border>
                                     </Grid>
                                 </Border>
